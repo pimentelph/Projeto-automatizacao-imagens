@@ -1,11 +1,14 @@
 import os
-import tkinter as tk
-from tkinter import simpledialog
+from tkinter import *
+from tkinter import filedialog
 from PIL import Image
 
-def pegar_caminho_pasta():
-    terminar = bool
+def abrir_janela_escolher_pasta():
+    janela2 = Tk()
+    janela2.withdraw() # Esconde a janela principal
 
+    pasta_escolhida = filedialog.askdirectory()
+    print("Pasta escolhida:", pasta_escolhida)
 
 def alterar_extensao(caminho_pasta):
     lista_arquivos = os.listdir(caminho_pasta)
@@ -20,10 +23,27 @@ def alterar_extensao(caminho_pasta):
                 novo_nome = os.path.splitext(arquivo)[0] + ".jpg"
                 imagem_convertida.save(os.path.join(caminho_pasta, novo_nome))
 
+def main():
+    janela2 = Tk()
+    janela2.withdraw() # Esconde a janela principal
 
-caminho_pasta = input("Coloque aqui o caminho da pasta que será usada(Se estiver com "" tire elas): ")
-alterar_extensao(caminho_pasta)
+    pasta_escolhida = filedialog.askdirectory()
+    print("Pasta escolhida:", pasta_escolhida)
+    alterar_extensao(pasta_escolhida)
 
+    texto_final["text"] = "Código finalizado, pode fechar a janela! Obrigado por usar!"
 
-if __name__ == '__main__':
-    py = 1
+janela = Tk() # Cria a janela e chama ela de "Janela"
+
+janela.title("Escolha a sua pasta")
+
+texto_explicacao = Label(janela, text="Clique no botão para ")
+texto_explicacao.grid(column=0, row=0, padx=10, pady=10)
+
+botao = Button(janela, text="Clique aqui para escolher a pasta", command=main)
+botao.grid(column=0, row=1, padx=15, pady=5)
+
+texto_final = Label(janela, text="")
+texto_final.grid(column=0, row=2, padx=10, pady=10)
+
+janela.mainloop() # Mantém a janela aberta até o final do uso
