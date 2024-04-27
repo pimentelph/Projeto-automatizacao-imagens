@@ -23,13 +23,10 @@ Processo relativamente simples, o problema é quando temos mais de 100 pessoas p
 Um pequeno sistema feito em Python usando as bibliotecas OS, PIL Image e Tkinter para que o usuário possa escolher a pasta das imagens que deseja alterar e, a partir disso, o programa percorre em cada arquivo de imagem alterando a sua extensão para .jpg e logo depois redimensionando essa imagem!
 
 ## Progresso:
-### - Feito:
-- Alteração automática da extensão dos arquivos dentro de uma pasta/diretório.
-
-### - A ser feito:
-- Redimensionamento automático das imagens dentro de uma pasta/diretório;
-- Salvar imagens redimensionadas em uma nova pasta criada na área de trabalho do usuário;
-- Usar o Tkinter para facilitar o uso do programa através de GUI(Interface de Usuário)
+### - Ideias para futuras melhorias
+- Melhorar a GUI;
+- Colocar para o usuário escolher quais os tamanhos para redimensionar a imagem;
+- Revisar o código e ver aonde posso melhorar.
 
 ## Autor:
 - Nome: Pedro Henrique Pimentel da Silva
