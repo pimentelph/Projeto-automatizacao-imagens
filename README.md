@@ -4,11 +4,11 @@
 
 ## O que é?
 
-Esse projeto consiste em um programa que converte os arquivos de imagem de uma pasta para JPG e depois redimensiona para um tamanho específico.
+Esse projeto consiste em um programa que converte os arquivos de imagem de uma pasta para JPG e depois redimensiona para um tamanho específico. Tenho novas ideias para implementar e otimizar esse projeto.
 
 ## Qual a situação a ser resolvida?
 
-No momento da realização do projeto, trabalho para o Banestes S.A atuando na área de design dos Recursos Humanos.
+No momento da realização do projeto, trabalho para uma empresa atuando na área de design dos Recursos Humanos.
 Aqui dentro fazemos o processo de atualizar a foto da lista de contato da empresa, que é o seguinte processo:
 
 1. Pedimos e recebemos as fotos dos colaboradores;
@@ -24,17 +24,15 @@ Um pequeno sistema feito em Python usando as bibliotecas OS, PIL Image e Tkinter
 
 ## Progresso:
 ### - Alguns problemas encontrados
-- Pelo oque parece o computador da empresa não roda o programa e não tenho uma ideia do porque.
 
 ### - Como posso resolver os problemas
-- A princípio penso em passar esse arquivo para a web usando Django para que o problema possa ser resolvido ou posso só deixar rodando no meu computador pessoal, assim não preciso.
 
-### - Ideias para futuras melhorias
+### - Ideias melhorias:
 - Melhorar a GUI;
 - Colocar para o usuário escolher quais os tamanhos para redimensionar a imagem;
 - Revisar o código e ver aonde posso melhorar;
 - Otimizar o código;
-- Melhorar algumas funções e deixar elas mais limpas;
+- Melhorar algumas funções e deixar elas mais limpas.
 
 ## Autor:
 - Nome: Pedro Henrique Pimentel da Silva
